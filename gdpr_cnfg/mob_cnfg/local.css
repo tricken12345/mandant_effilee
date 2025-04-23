@@ -1,0 +1,110 @@
+#iqd_mainAd {
+    height: auto;
+    padding: 0px;
+    margin: 0 auto;
+  }
+  
+  #iqd_align_Ad {
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  #iqd_topAd {
+    padding: 0;
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  [id^="iqadtile"] {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    display: table;
+    text-align: center;
+    position: relative;
+    font-size: 0px;
+    line-height: 0;
+    margin: 0 auto;
+    padding: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1;
+    top: 70px;
+    min-width: 300px;
+  }
+  
+  #iqadtile3{
+    overflow: visible !important;
+  }
+  
+  
+  [id^="iqadtile"][style*="display: none"] {
+    display: inline-table;
+  }
+  
+  #iqadtileOOP,#iqadtile111 {
+    display: none;
+  }
+  
+  [id^="iqadtile"]>div[id^="google_ads_iframe"] {
+    margin: 0 auto;
+  }
+  
+  /* Standard IQ Label Styles */
+  @media (prefers-color-scheme: light) {
+    .iqlabel::before {
+      position: relative;
+      display: block;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      color: #807E7C;
+      text-indent: 0.5rem;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: SPIEGEL Sans UI, Arial, Verdana, Helvetica, sans-serif;
+      line-height: 32px;
+      background-color: #F1EFED;
+      white-space: nowrap;
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .iqlabel::before {
+      position: relative;
+      display: block;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      color: #BBB9B7;
+      text-indent: 0.5rem;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: SPIEGEL Sans UI, Arial, Verdana, Helvetica, sans-serif;
+      line-height: 32px;
+      background-color: #000;
+      white-space: nowrap;
+    }
+  }
+  
+  .iqlabel-centered::before {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .iqlabel-left::before {
+    text-align: left;
+  }
+  .iqlabel-right::before {
+    text-align: right;
+  }
+  
+  .iqlabel-stdtxt::before {
+    content: 'Anzeige';
+  }
+  
+  .iqlabel-customtxt::before {
+    content: 'Weiterlesen nach dieser Anzeige';
+  }
