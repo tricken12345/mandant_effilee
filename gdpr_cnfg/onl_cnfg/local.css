@@ -1,0 +1,178 @@
+#iqd_mainAd {
+    height: auto;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+#iqd_align_Ad {
+    margin: 0 auto;
+    position: relative;
+}
+
+#iqd_topAd {
+    padding: 0;
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#iqd_rightAd,
+#iqd_leftAd {
+    position: fixed;
+}
+
+#ccLeft, #ccRight {
+  z-index: 1;
+}
+
+[id^="iqadtile"] {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    display: table;
+    text-align: center;
+    position: relative;
+    font-size: 0px;
+    line-height: 0;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+#iqadtile4,
+#iqadtile41 {
+    overflow: visible !important;
+}
+
+#iqadtile21,
+#iqadtile20 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#iqadtile21 {
+    text-align: left;
+}
+
+#iqadtile20 {
+    text-align: right;
+}
+
+
+#iqadtile111 {
+    margin-top: 0px;
+}
+
+
+
+[id^="iqadtile8"],
+[id="iqadtile9"] {
+    min-width: 120px;
+}
+
+[id^="iqadtile99"] {
+    min-width: 300px;
+}
+
+[id^="iqadtile15"],[data-iqdselector="homepage"]{
+  min-width: 276px !important;
+}
+
+[id^="iqadtile1"],
+[data-iqdselector="homepage"][id^="iqadtile4"],
+[data-iqdselector="index"][id^="iqadtile4"],
+[data-iqdselector="thema"][id^="iqadtile4"],
+[data-iqdselector="bildgal"][id^="iqadtile4"],
+[id^="iqadtile5"],
+[id^="iqadtile6"] {
+    min-width: 1000px;
+}
+
+
+[data-iqdselector="artikel"] [id^="iqadtile4"],
+[data-iqdselector="artikelpaid"][id^="iqadtile4"],
+[data-iqdselector="artikel_video"][id^="iqadtile4"],
+[data-iqdselector="artikel_audio"][id^="iqadtile4"]{
+    min-width: 300px;
+}
+
+/*
+.iqadtile-space-tb {
+     margin: 22px auto 0px auto;
+}
+*/
+
+/* SPA inview - FIX display none iat after navigating */
+
+
+[id^="iqadtile"][style*="display: none"] {
+    display: inline-table;
+}
+
+#iqadtileOOP {
+    display: block;
+}
+
+[id^="iqadtile"]>div[id^="google_ads_iframe"] {
+    margin: 0 auto;
+}
+
+/* Start SIR */
+/*
+#iqadtile8 {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    z-index: 111;
+    top: 70px;
+}
+*/
+.iqlabel::before {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 12px;
+    text-indent: 0.5rem;
+    text-transform: uppercase;
+    font-family: SPIEGEL Sans UI, Arial, Verdana, Helvetica, sans-serif;
+    line-height: 32px;
+    white-space: nowrap;
+    visibility:hidden;
+}
+@media (prefers-color-scheme: light) {
+.iqlabel::before {
+    color: #807E7C;
+    background-color: transparent;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .iqlabel::before {
+    color: #BBB9B7;
+    background-color: #000;
+  }
+}
+#iqadtile21::before, #iqadtile20::before{
+    background-color: transparent;
+}
+.iqlabel-centered::before {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.iqlabel-left::before {
+    text-align: left;
+}
+
+.iqlabel-right::before {
+    text-align: right;
+}
+
+.iqlabel-stdtxt::before {
+    content: 'Anzeige';
+}
+
+.iqlabel-customtxt::before {
+    content: 'Weiterlesen nach dieser Anzeige';
+}
