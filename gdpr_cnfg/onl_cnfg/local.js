@@ -51,6 +51,7 @@ const IQD_varPackCustom = {
     footer: 'footer',
   },
   headerStickyDetector: '.is-headerbar-collapsed',
+  adSlotLabelHeight: 7,
   availableInnerHeight: window.innerHeight,
   availableInnerHeightPur: window.innerHeight,
   servicesToLoad: {
@@ -134,7 +135,7 @@ const setSkyTop = () => {
 
 window.IQD_varPack.skyConfig = {
   align: '#iqd_align_Ad',
-  margin: 15,
+  margin: 10,
   headerBottomCallback: setSkyTop,
 };
 
